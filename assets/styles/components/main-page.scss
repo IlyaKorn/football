@@ -1,0 +1,31 @@
+.main-page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  column-gap: 14px;
+}
+
+.main-page__link {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  text-align: center;
+  background-color: #2D2D44;
+  transition: all 0.3s linear;
+
+  &:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.main-page__card {
+  color: #BDF1FF;
+  transition: all 0.2s linear;
+
+  &:not(:last-of-type) {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    color: white;
+  }
+}

@@ -1,0 +1,86 @@
+.league {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.league__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  padding: 4px 8px;
+  border: 1px solid #2D2D44;
+  color: #2d2d44;
+  transition: all 0.2s linear;
+
+  &:hover {
+    padding: 8px 8px;
+  }
+}
+
+.league__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.league__img {
+  margin-right: 8px;
+}
+
+.league-detail {
+  .league-detail__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .league-detail__img {
+    margin-right: 20px;
+  }
+
+  .league-detail__icon,
+  .league-detail__icon-marker {
+    margin-right: 12px;
+  }
+
+  .league-detail__icon-marker {
+    fill: red;
+
+    &--current {
+      fill: green;
+    }
+  }
+
+  .league-detail__season {
+    padding: 4px 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #2D2D44;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .league-detail__season:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .league-detail__season-period {
+    flex-grow: 1;
+    color: #2D2D44;
+  }
+
+  .league-detail__season-start {
+    margin-right: 8px;
+  }
+
+  .league-detail__season-title {
+    font-weight: bold;
+  }
+}
