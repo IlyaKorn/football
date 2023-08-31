@@ -12,7 +12,7 @@ export default {
   name: 'Default',
 
   created() {
-    // indexStore.getCountries()
+    indexStore.getCountries()
   }
 }
 </script>

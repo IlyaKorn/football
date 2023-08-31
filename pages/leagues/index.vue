@@ -37,5 +37,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @use '@/assets/styles/components/leagues.scss';
+.leagues__title {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.leagues__subtitle {
+  margin-bottom: 14px;
+}
+
+.leagues__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.leagues__list {
+  width: 100%;
+}
 </style>

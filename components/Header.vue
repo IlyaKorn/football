@@ -5,8 +5,8 @@
         <NuxtLink class="header__logo" to="/">
           <Icon symbol="logo" />
         </NuxtLink>
-        <NuxtLink class="header__item" to="#">Leagues</NuxtLink>
-        <NuxtLink class="header__item" to="#">Teams</NuxtLink>
+        <NuxtLink class="header__item" to="/leagues">Leagues</NuxtLink>
+        <NuxtLink class="header__item" to="/teams">Teams</NuxtLink>
       </nav>
     </div>
   </div>
