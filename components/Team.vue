@@ -58,12 +58,6 @@ export default {
       default: () => false
     },
 
-    coaches: {
-      type: Array,
-      required: false,
-      default: () => []
-    },
-
     players: {
       type: Array,
       required: false,

@@ -96,6 +96,7 @@ export default {
 .teams__logotypes {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team__logo:not(:last-child) {

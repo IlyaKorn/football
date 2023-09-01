@@ -3,7 +3,6 @@
       v-if='currentTeam'
       :team='currentTeam'
       :isDetail='true'
-      :coaches='coaches'
       :players='players'
   />
 </template>
@@ -14,7 +13,6 @@ export default {
   data () {
     return {
       currentTeam: null,
-      coaches: null,
       players: []
     }
   },
@@ -40,7 +38,8 @@ export default {
       fetch(`https://v3.football.api-sports.io/players/squads?team=${this.$route.params.id}`, {...fetchSettings})
         .then(response => response.json())
         .then(res => {
-          this.players = res.response.players
+          console.log(res)
+          this.players = res.response[0].players
         })
         .catch(err => {
           console.error(err);
